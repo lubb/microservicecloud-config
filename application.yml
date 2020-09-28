@@ -1,3 +1,15 @@
 spring:
+  profiles:
+    active:
+      - dev
+---
+spring:
+  profiles: dev
   application:
-    name: microservicecloud-zuul-ga
+    name: microservicecloud-config-xinwis-dev
+---
+spring:
+  profiles: test
+  application:
+    name: microservicecloud-config-xinwis-test
+---
